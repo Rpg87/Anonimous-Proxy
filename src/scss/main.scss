@@ -2,7 +2,11 @@
 @import 'core/reset';
 @import 'components/code';
 @import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
+/*Consultar motivo de que @import "layout/pages"; diese error y no permitiría aplicar estilo. ¿es por qué está encima de layout header?*/
+@import 'layout/_header';
 @import 'layout/footer';
-@import 'pages/index';
+
+.main {
+   
+
+}
