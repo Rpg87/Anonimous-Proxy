@@ -3,66 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Evaluación final Raquel Peña</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    
   </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+  <body class="body">
+      <header class="header">
+        <nav class="image__menu">
+          <a href="https://adalab.es/"><img class="image__menu--link" src="./assets/images/ico-menu.svg" alt="Rayas"></a>
+        </nav>
+          <section class="headersection">
+            <h1
+             class="headersection__h1">anonymous proxy
+            </h1>
+            <h3 class="headersection__h3">
+              In hac habitasse platea dictumst.
+            </h3>
+            <img class="headersection__scroll" src="./assets/images/ico-scroll-down.svg" alt="flecha para abajo">
+          </section> <!--AQUÍ HAY QUE PONERLE ENLACE A 3 REASONS TO PURCHASE-->
       </header>
+      <main class="main">
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
+        <section class="sec1">
+          <small class="sec1__insomnia">
+            insomnia tips
+          </small>
+          <h2 class="sec1__h2">
+            looking through a window <!-- windows debería estar en la segunda línea a menos de 480-->
+          </h2>
+          <p class="sec1__p">
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+          <a class="sec1__go" href=""><button class="sec1__go--inside">Go</button></a>
+        </section>
+      <!-- De aquí para abajo debo usar Grid para darle forma-->
+        <section class="grid">
+          <h2 class="grid__h2">
+            3 reasons to purchase
+          </h2>
+          <article class="grid__art">
+            <h3 class="grid__art--h3">
+              Ut sed metus
+            </h3>
+            <p class="grid__art--p">
+              Lorem ipsum dolor sit amet, consecteur.
+            </p>
+          </article class="grid__art">
+          <article>
+            <h3 class="grid__art--h3">
+              Curabitur ac erat
+            </h3>
+            <p class="grid__art--p">
+              Mauris mattis urna quis lorem molestie.
+            </p>
+          </article>
+           <article class="grid__art">
+            <h3 class="grid__art--h3">
+              Morbi dictum
+            </h3>
+            <p class="grid__art--p">
+              Aliquam in dolor et dolor tincidunt.
+            </p>
+          </article>
+          
+            <a class="container" href=""><button class="container__button" >more reasons</button></a>
+         
+        </section>
       </main>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+     
+    <footer>
+     <ul>
+      <li>articles</li>
+      <li>books</li>
+      <li>events</li>
+      <li>reasons</li>
+      <li>tips</li>
+     </ul>
 
-        </small>
-      </footer>
+     <ul>
+      <li>twitter</li>
+      <li>instagram</li>
+      <li>mastodon-social</li>
+     </ul>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+     &copy;2022
+
+    <h6>
+      we components
+    </h6>
+    </footer>
+
+
+
+
+    <!--<footer class="page__footer">
+      <small>
+        &copy; Todos los derechos reservados
+        <a class="link__adalab" href="https://adalab.es">Adalab</a>
+
+      </small>
+    </footer>-->
+
   </body>
 </html>
+
+
+
+
