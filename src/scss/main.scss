@@ -53,7 +53,7 @@
                 border-radius: 22.5px;
                 width: 76px;
                 height: 45px;
-                @media screen and (min-width: 480px){
+                @media screen and (min-width: 780px){
                     width: 91px;   
                 }
                 @media screen and (min-width: 1200px){
@@ -66,7 +66,7 @@
         }
 
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 50px;
@@ -74,17 +74,22 @@
     justify-content: center;
     text-align: center;
     padding: 29px 15px 50px;
-    background-color: $color-background-reasons;       
-                @media screen and (min-width:768px){
-                    grid-template-columns: 1fr 1fr 1fr;
-                }
+    background-color: $color-background-reasons;   
+                @media screen and (min-width:780px){
+                    grid-template-areas: 
+                        "h2 h2 h2"
+                        "art1 art2 atr3"
+                        "button button button";
+                }    
+                
         &__h2 {
+            grid-area: h2;
             font-family: $font-bold;
             font-size: 24px;
             font-weight: 800;
             text-transform: capitalize;
            
-                @media screen and (min-width:768px){
+                @media screen and (min-width:780px){
                     margin-top: 36px;
                     font-size: 26px;
                 }
@@ -93,8 +98,9 @@
                     font-size: 32px;
                 }
         }
-        &__art {
-            
+    
+        &__art1 {
+            grid-area: art1;
             &--h3 {
                
                 font-family: $font-bold; 
@@ -108,9 +114,42 @@
             }
             
         }
-}
+
+        &__art2 {
+            grid-area: art2;
+            &--h3 {
+               
+                font-family: $font-bold; 
+                font-size: 18px;
+                font-weight: 800; 
+            }
+            &--p { 
+                font-family: $font-normal;
+                font-size: 18px;
+                font-weight: 600;
+            } 
+        }
+
+        &__art3 {
+            grid: art3;
+            &--h3 {
+               
+                font-family: $font-bold; 
+                font-size: 18px;
+                font-weight: 800; 
+            }
+            &--p { 
+                font-family: $font-normal;
+                font-size: 18px;
+                font-weight: 600;
+            }  
+        }
+    }
+
 
 .container {
+
+    grid-area: button;
    
         &__button {
         width: 184px;
