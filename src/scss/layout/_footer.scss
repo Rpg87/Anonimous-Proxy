@@ -3,23 +3,45 @@
     list-style: none;
 }
 
+.arrow{
+    transform: translatey(-85px);
+    background-color: white;
+    padding: 11px 12.4px 10px 12px;
+    border-radius: 50%;
+    
+    
+}
 .footer {
     background-color: $color-background-footer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-family: $font-normal;
+    padding-top: 65px;
+    padding-bottom: 40px;
+    line-height: 1.9;
+
+    
 }
 
 .first {
    
+   text-transform: uppercase;
+
     &__list {
-        color: white 
+        color: white;
+         
     }
 }
 
 .second {
-
+    
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
     &__media {
         color: white;
     }
 }
+
