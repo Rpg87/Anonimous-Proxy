@@ -1,0 +1,25 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer {
+    background-color: $color-background-footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first {
+   
+    &__list {
+        color: white 
+    }
+}
+
+.second {
+
+    &__media {
+        color: white;
+    }
+}
