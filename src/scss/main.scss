@@ -13,20 +13,23 @@
     text-align: left;
     padding: 37px 15px 35px;
     margin-top: 25px;
+    gap: 25px;
+    
 
         &__insomnia {
             color: #8ccbea;
+            font-family: $font-normal;
             font-size: 14px;
+            line-height: 30px;
             text-transform: capitalize;
         }
 
         &__h2 {
-        font-family: $font-bold;   
+        font-family: $font-bold;
+        font-weight: 800;   
         font-size: 24px;
         text-transform: capitalize;
-        line-height: 1.25;
-        margin-top: 15px;
-            
+        line-height: 1.25;            
         }
 
         &__p {
@@ -37,22 +40,84 @@
             line-height: 1.67;
             letter-spacing: 0.50px;
         }
+        
+        &__go{
 
-        &__go {
-            font-family: $font-normal;
-            font-size: 20px;
-            font-weight: 600;
-            color: $color-orange;
-            border: solid 2px $color-orange;
-            background-color: $color-white;
-            width: 76px;
-            height: 45px;
-            border-radius: 22.5px;
+            &--inside {
+                color: $color-orange;
+                background-color: $color-white;
+                font-family: $font-normal;
+                font-size: 20px;
+                font-weight: 600;
+                border: solid 2px $color-orange;
+                border-radius: 22.5px;
+                width: 76px;
+                height: 45px;
                 @media screen and (min-width: 480px){
                     width: 91px;   
                 }
                 @media screen and (min-width: 1200px){
                     width: 160px;
                 }
+
+            }
         }
+
+        }
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+
+    background-color: $color-background-reasons;       
+
+        &__h2 {
+            font-family: $font-bold;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-top: 29px;
+                @media screen and (min-width:780px){
+                    margin-top: 36px;
+                    font-size: 26px;
+                }
+                @media screen and (min-width:1200px){
+                    margin-top: 61px;
+                    font-size: 32px;
+                }
+        }
+        &__art {
+            line-height: 1.5;
+            &--h3 {
+               
+                font-family: $font-bold; 
+                font-size: 18px;
+                font-weight: 800; 
+            }
+            &--p { 
+                font-family: $font-normal;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            
+        }
+}
+
+.container {
+    margin-bottom: 50px;
+        &__button {
+        color: $color-white;
+        background-color: $color-orange;
+        font-family: $font-normal;
+        font-weight: 600;
+        line-height: 2.25;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-radius: 22.5px;
+}
 }
