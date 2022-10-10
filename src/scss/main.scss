@@ -69,19 +69,22 @@
 .grid{
     display: grid;
     grid-template-columns: auto;
+    grid-gap: 50px;
+    line-height: 1.5;
     justify-content: center;
     text-align: center;
-    gap: 50px;
-
+    padding: 29px 15px 50px;
     background-color: $color-background-reasons;       
-
+                @media screen and (min-width:768px){
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
         &__h2 {
             font-family: $font-bold;
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 800;
             text-transform: capitalize;
-            margin-top: 29px;
-                @media screen and (min-width:780px){
+           
+                @media screen and (min-width:768px){
                     margin-top: 36px;
                     font-size: 26px;
                 }
@@ -91,7 +94,7 @@
                 }
         }
         &__art {
-            line-height: 1.5;
+            
             &--h3 {
                
                 font-family: $font-bold; 
@@ -108,16 +111,18 @@
 }
 
 .container {
-    margin-bottom: 50px;
+   
         &__button {
+        width: 184px;
+        height: 45px;
         color: $color-white;
         background-color: $color-orange;
         font-family: $font-normal;
         font-weight: 600;
-        line-height: 2.25;
         letter-spacing: 0.5px;
         text-transform: capitalize;
         font-size: 20px;
         border-radius: 22.5px;
+        border-color: transparent;
 }
 }

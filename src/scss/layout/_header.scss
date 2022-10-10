@@ -19,8 +19,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-bottom: 34.1px;
   
 
   &__h1 {
@@ -29,17 +30,24 @@
     font-size: 42px;
     font-family: $font-bold;
     font-weight: 800;
-    width: 320px;
-    word-spacing: 10vw;
+    width: 100vw;
+    word-spacing: 9vw;
     margin-top: 290px;
     margin-bottom: 20px;
     letter-spacing: 3px;
     text-align: center;
+        @media screen and (min-width:780px){
+          font-size: 80px;
+          text-align: center;
+        }
   }
   &__h3 {
     font-weight: 200;
     color: $color-white;
     font-family: $font-normal;
+    @media screen and (min-width:780px){
+      font-size: 24px;
+    }
   }
   &__scroll {
     padding: 14.8px 10.1px 12.6px 11px;
