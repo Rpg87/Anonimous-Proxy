@@ -14,7 +14,11 @@
     padding: 37px 15px 35px;
     margin-top: 25px;
     gap: 25px;
-    
+        @media screen and (min-width: 1200px) {
+            
+            margin-left: 525px;
+            
+        }
 
         &__insomnia {
             color: #8ccbea;
@@ -91,7 +95,7 @@
                         "h2 h2 h2"
                         "art1 art2 atr3"
                         "button button button";
-                }    
+                }  
                 
         &__h2 {
             font-family: $font-bold;
@@ -113,7 +117,10 @@
         &__art1 {
             
                     @media screen and (min-width: 780px) {
-                    grid-area: art1;
+                        grid-area: art1;
+                    }
+                    @media screen and (min-width: 1200px) {
+                        margin-right: 80px;
                     }
             &--h3 {
                
@@ -165,6 +172,9 @@
             
                 @media screen and (min-width: 780px) {
                     grid: art3;
+                }
+                @media screen and (min-width: 1200px) {
+                    margin-left: 80px;
                 }
             &--h3 {
                
