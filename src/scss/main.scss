@@ -22,6 +22,9 @@
             font-size: 14px;
             line-height: 30px;
             text-transform: capitalize;
+                @media screen and (min-width: 1200px) {
+                    font-size: 16px;
+                }
         }
 
         &__h2 {
@@ -29,16 +32,25 @@
         font-weight: 800;   
         font-size: 24px;
         text-transform: capitalize;
-        line-height: 1.25;            
+        line-height: 1.25;   
+            @media screen and (min-width: 780px) {
+                font-size: $size-table-title;
+            }  
+            @media screen and (min-width: 1200px){
+                font-size: $size-pc-title;
+            }       
         }
 
         &__p {
             font-family: $font-normal;
-            font-size: 18px;
+            font-size: $size-mb-p;
             color: #4a4a4a;
             font-weight: bold;
             line-height: 1.67;
             letter-spacing: 0.50px;
+                @media screen and (min-width: 780px){
+                font-size: $size-tablet-p;
+                }
         }
         
         &__go{
@@ -89,30 +101,37 @@
            
                 @media screen and (min-width:780px){
                     margin-top: 36px;
-                    font-size: 26px;
+                    font-size: $size-table-title;
                     grid-area: h2;
                 }
                 @media screen and (min-width:1200px){
                     margin-top: 61px;
-                    font-size: 32px;
+                    font-size: $size-pc-title;
                 }
         }
     
         &__art1 {
             
-                @media screen and (min-width:780px) {
+                    @media screen and (min-width: 780px) {
                     grid-area: art1;
-                }
+                    }
             &--h3 {
                
                 font-family: $font-bold; 
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 800; 
+                    @media screen and (min-width: 780px){
+                    font-size: $size-table-bold;
+                    margin-bottom: 15px;
+                    }
             }
             &--p { 
                 font-family: $font-normal;
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 600;
+                    @media screen and (min-width: 780px){
+                    font-size: $size-tablet-p;
+                    }
             }
             
         }
@@ -125,13 +144,20 @@
             &--h3 {
                
                 font-family: $font-bold; 
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 800; 
+                    @media screen and (min-width: 780px){
+                    font-size: $size-table-bold;
+                    margin-bottom: 15px;
+                    }
             }
             &--p { 
                 font-family: $font-normal;
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 600;
+                    @media screen and (min-width: 780px){
+                    font-size: $size-tablet-p;
+                    }
             } 
         }
 
@@ -143,13 +169,20 @@
             &--h3 {
                
                 font-family: $font-bold; 
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 800; 
+                    @media screen and (min-width: 780px){
+                    font-size: $size-table-bold;
+                    margin-bottom: 15px;
+                    }
             }
             &--p { 
                 font-family: $font-normal;
-                font-size: 18px;
+                font-size: $size-mb-p;
                 font-weight: 600;
+                    @media screen and (min-width: 780px){
+                    font-size: $size-tablet-p;
+                    }
             }  
         }
     }

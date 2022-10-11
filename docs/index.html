@@ -11,9 +11,9 @@
   </head>
 
   <body class="body">
-      <header class="header">
+      <header class="header" id="header">
         <nav class="image__menu">
-          <a href="https://adalab.es/" target="_blank"><img class="image__menu--link" src="./assets/images/ico-menu.svg" alt="Rayas"></a>
+          <a href="https://adalab.es/" target="_blank" title="Go to Adalab"><img class="image__menu--link" src="./assets/images/ico-menu.svg" alt="Rayas"></a>
         </nav>
           <section class="headersection">
             <h1
@@ -22,7 +22,9 @@
             <h3 class="headersection__h3">
               In hac habitasse platea dictumst.
             </h3>
-            <img class="headersection__scroll" src="./assets/images/ico-scroll-down.svg" alt="flecha para abajo">
+            <a href="#grid">
+              <img class="headersection__scroll" src="./assets/images/ico-scroll-down.svg" alt="flecha para abajo">
+            </a>
           </section> <!--AQUÍ HAY QUE PONERLE ENLACE A 3 REASONS TO PURCHASE-->
       </header>
       <main class="main">
@@ -32,16 +34,16 @@
             insomnia tips
           </small>
           <h2 class="sec1__h2">
-            looking through a window <!-- windows debería estar en la segunda línea a menos de 480-->
+            looking through a window 
           </h2>
           <p class="sec1__p">
             Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
           </p>
-          <a class="sec1__go" href=""><button class="sec1__go--inside">Go</button></a>
+          <button class="sec1__go">Go</button>
         </section>
       <!-- De aquí para abajo debo usar Grid para darle forma-->
         
-      <section class="grid">
+      <section class="grid" id>
           <h2 class="grid__h2">
             3 reasons to purchase
           </h2>
@@ -70,7 +72,7 @@
             </p>
           </article>
           
-            <a class="container" href=""><button class="container__button" >more reasons</button></a>
+            <a class="container" href="#"><button class="container__button" >more reasons</button></a>
          
         </section>
       </main>
@@ -78,7 +80,7 @@
      
     <footer class="footer">
     <button class="conteiner">
-      <a  href="">
+      <a  href="#header">
         <img class="conteiner__arrow" src="./assets/images/ico-arrow.svg" alt="Flecha para arriba">
     </a>
     </button>
