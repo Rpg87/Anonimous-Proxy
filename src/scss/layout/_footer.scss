@@ -10,6 +10,9 @@
     border-color: transparent;
     padding: 18px 20px 13px 20px;
     border-radius: 50%; 
+    animation-name: size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .footer {
@@ -72,4 +75,10 @@
 }
 .components {
     color: $color-white
+}
+
+@keyframes size {
+   100% {
+    transform: rotate(360deg);
+   }
 }

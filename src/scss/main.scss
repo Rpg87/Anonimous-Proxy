@@ -62,14 +62,8 @@
                     transform: scale(80px);
                     transition: 7s;
                 }
-                
-                
-
             }
         }
-
-        
-
 
 .grid {
     display: grid;
@@ -161,9 +155,7 @@
     }
 
 
-.container {
-    
-    
+.container {    
     @media screen and (min-width: 780px){
         grid-area: button;
     }    
