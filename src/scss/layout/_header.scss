@@ -22,6 +22,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 34.1px;
+  line-height: 1.3;
   
 
   &__h1 {
@@ -38,6 +39,9 @@
         @media screen and (min-width:780px){
           font-size: 80px;
           text-align: center;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 100px;
         }
   }
   &__h3 {
