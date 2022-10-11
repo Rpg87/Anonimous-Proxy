@@ -57,5 +57,13 @@
     background-color: $color-white;
     border-radius: 50%;
     margin-top: 20px;
+    animation-name: big;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes big {
+  100% {
+    transform: scale(1.3);
   }
 }
