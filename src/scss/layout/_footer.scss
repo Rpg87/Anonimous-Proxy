@@ -30,7 +30,8 @@
            flex-direction: row; 
            justify-content: space-around;
            align-items: flex-start;
-           text-align: justify;           
+           text-align: justify;    
+                
         }   
         @media screen and (min-width: 1200px) {
             justify-content: center;
@@ -42,7 +43,7 @@
    
    text-transform: uppercase;
     @media screen and (min-width: 780px) {
-            order: 2; 
+            order: 2
     }
 
     &__list {
@@ -52,7 +53,6 @@
 }
 
 .second {
-    
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -67,7 +67,7 @@
 
 .lastconteiner {
         @media screen and (min-width: 780px) {
-            order: 0;
+           order: 0;
         }
 }
 .copy {
