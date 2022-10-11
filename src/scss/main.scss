@@ -83,7 +83,6 @@
                 }    
                 
         &__h2 {
-            grid-area: h2;
             font-family: $font-bold;
             font-size: 24px;
             font-weight: 800;
@@ -92,6 +91,7 @@
                 @media screen and (min-width:780px){
                     margin-top: 36px;
                     font-size: 26px;
+                    grid-area: h2;
                 }
                 @media screen and (min-width:1200px){
                     margin-top: 61px;
@@ -100,7 +100,10 @@
         }
     
         &__art1 {
-            grid-area: art1;
+            
+                @media screen and (min-width:780px) {
+                    grid-area: art1;
+                }
             &--h3 {
                
                 font-family: $font-bold; 
@@ -116,7 +119,10 @@
         }
 
         &__art2 {
-            grid-area: art2;
+            
+                @media screen and (min-width: 780px) {
+                    grid-area: art2;
+                }
             &--h3 {
                
                 font-family: $font-bold; 
@@ -131,7 +137,10 @@
         }
 
         &__art3 {
-            grid: art3;
+            
+                @media screen and (min-width: 780px) {
+                    grid: art3;
+                }
             &--h3 {
                
                 font-family: $font-bold; 
@@ -148,8 +157,9 @@
 
 
 .container {
-
-    grid-area: button;
+    @media screen and (min-width: 780px){
+        grid-area: button;
+    }    
    
         &__button {
         width: 184px;
