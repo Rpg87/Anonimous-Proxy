@@ -42,28 +42,33 @@
         }
         
         &__go{
-
-            &--inside {
-                color: $color-orange;
-                background-color: $color-white;
-                font-family: $font-normal;
-                font-size: 20px;
-                font-weight: 600;
-                border: solid 2px $color-orange;
-                border-radius: 22.5px;
-                width: 76px;
-                height: 45px;
+            width: 76px;
+            height: 45px;
+            color: $color-orange;
+            background-color: $color-white;
+            font-family: $font-normal;
+            font-size: 20px;
+            font-weight: 600;
+            border: solid 2px $color-orange;
+            border-radius: 22.5px;
                 @media screen and (min-width: 780px){
-                    width: 91px;   
+                width: 91px;   
                 }
                 @media screen and (min-width: 1200px){
                     width: 160px;
                 }
+                &:hover{
+                    background-color: black;
+                    transform: scale(80px);
+                    transition: 7s;
+                }
+                
+                
 
             }
         }
 
-        }
+        
 
 
 .grid {
@@ -157,6 +162,8 @@
 
 
 .container {
+    
+    
     @media screen and (min-width: 780px){
         grid-area: button;
     }    
@@ -173,5 +180,9 @@
         font-size: 20px;
         border-radius: 22.5px;
         border-color: transparent;
+            &:hover{
+                transform: scale(1.7);
+                transition: 4s;
+            }
 }
 }
